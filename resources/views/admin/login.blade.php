@@ -1,0 +1,5 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Admin Login | Agasthiya Mahashiva Nadi Peedam</title><link rel="stylesheet" href="/astrol.css"><script src="/astrol.js" defer></script></head>
+<body class="admin-auth-page"><div class="admin-auth-card"><div class="admin-symbol">☼</div><p class="eyebrow">Agasthiya Mahashiva Nadi Peedam</p><h1>Admin Login</h1><p class="admin-auth-intro">Sign in to manage the website content.</p>@if (session('admin_error'))<div class="admin-alert">{{ session('admin_error') }}</div>@endif<form method="POST" action="{{ route('admin.login.submit') }}">@csrf<label>Email<input type="email" name="email" value="{{ old('email') }}" placeholder="admin@astrol.local" required autofocus></label><label>Password<input type="password" name="password" placeholder="Your password" required></label>@error('email')<div class="admin-error">{{ $message }}</div>@enderror<button class="btn-primary" type="submit">Sign in <span>→</span></button></form><a class="admin-back-link" href="{{ url('/') }}">← Back to website</a></div></body>
+</html>

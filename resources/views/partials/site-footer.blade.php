@@ -1,0 +1,1 @@
+<footer><div class="container-custom"><div class="footer-bottom"><span>© {{ date('Y') }} Agasthiya Mahashiva Nadi Astrology. All rights reserved.</span><span>Made with <span style="color:#ef4444">♥</span> in India</span><a class="back-top" href="#top" aria-label="Back to top">↑</a></div></div></footer>

@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Understand traditional Nadi Astrology, palm-leaf readings, and the journey from leaf searching to personal guidance.">
+    <title>Nadi Astrology | Agasthiya Mahashiva Nadi Peedam</title>
+    <link rel="stylesheet" href="/astrol.css"><script src="/astrol.js" defer></script>
+</head>
+<body>
+    <div class="topbar"><div class="container-custom topbar-inner"><a class="phone-mini" href="tel:+918925147243">☎ <span>+91 8925147243 / +91 9789686423</span></a><div class="topbar-right"><label class="language">文 <span>Language:</span><select id="language-select" aria-label="Translate website language"><option value="en">English</option><option value="ta">Tamil</option><option value="hi">Hindi</option><option value="te">Telugu</option><option value="kn">Kannada</option><option value="ml">Malayalam</option></select></label><span class="size-label">Text Size:</span><button class="size-button" data-size="decrease">A−</button><button class="size-button" data-size="reset">A</button><button class="size-button" data-size="increase">A+</button></div><div id="google_translate_element" class="hidden"></div></div></div>
+    <nav class="main-nav scrolled"><div class="container-custom nav-inner"><a href="{{ url('/') }}#home" class="brand"><span class="brand-mark">☼</span><span>Agasthiya Mahashiva Nadi Peedam</span></a><div class="desktop-links"><a href="{{ url('/') }}#home">Home</a><a href="{{ url('/about-us') }}">About Us</a><div class="nav-dropdown"><button type="button">Nadi Astrology <span>⌄</span></button><div class="dropdown-menu"><a href="{{ url('/nadi-astrology') }}">Overview</a><a href="{{ url('/nadi-astrology/history') }}">History of Nadi</a><a href="{{ url('/nadi-astrology/how-leaf-searching-works') }}">How Leaf Searching Works</a><a href="{{ url('/nadi-astrology/the-kandams') }}">The Kandams</a><a href="{{ url('/nadi-astrology/online-prediction-process') }}">Online Prediction Process</a></div></div><div class="nav-dropdown"><button type="button">Media &amp; Insights <span>⌄</span></button><div class="dropdown-menu"><a href="{{ url('/blogs') }}">Blogs</a><a href="{{ url('/news-events') }}">News &amp; Events</a><a href="{{ url('/gallery') }}">Photo &amp; Video Gallery</a></div></div><a href="{{ url('/contact-us') }}">Contact Us</a></div><a class="consult desktop-consult" href="tel:+918925147243">☎ Consult Now</a></div></nav>
+    <button class="menu-button" aria-label="Open menu">☰</button><div class="mobile-menu"><div class="mobile-links"><a data-close-menu href="{{ url('/') }}#home">Home</a><a data-close-menu href="{{ url('/about-us') }}">About Us</a><details open><summary>Nadi Astrology <span>⌄</span></summary><a data-close-menu href="{{ url('/nadi-astrology') }}">Overview</a><a data-close-menu href="{{ url('/nadi-astrology/history') }}">History of Nadi</a><a data-close-menu href="{{ url('/nadi-astrology/how-leaf-searching-works') }}">How Leaf Searching Works</a><a data-close-menu href="{{ url('/nadi-astrology/the-kandams') }}">The Kandams</a><a data-close-menu href="{{ url('/nadi-astrology/online-prediction-process') }}">Online Prediction Process</a></details><details><summary>Media &amp; Insights <span>⌄</span></summary><a data-close-menu href="{{ url('/blogs') }}">Blogs</a><a data-close-menu href="{{ url('/news-events') }}">News &amp; Events</a><a data-close-menu href="{{ url('/gallery') }}">Photo &amp; Video Gallery</a></details><a data-close-menu href="{{ url('/contact-us') }}">Contact Us</a><a class="consult" href="tel:+918925147243">☎ Consult Now</a></div></div>
+
+    <main class="nadi-page">
+        @include('partials.page-banner', [
+            'eyebrow' => 'The wisdom of the palm leaves',
+            'title' => 'A reading that begins with <span>recognition.</span>',
+            'subtitle' => 'Nadi Astrology is a traditional process of finding the palm-leaf record connected with your life, then listening carefully to the guidance preserved within it.',
+            'actionText' => 'Explore the journey',
+            'actionUrl' => '#journey',
+            'actionIcon' => '↓',
+            'image' => asset('images/nadi-deities.jpeg'),
+            'alt' => 'Agastya and Lopamudra Devi',
+        ])
+
+        <section class="nadi-definition"><div class="container-custom nadi-definition-grid"><div class="nadi-section-label"><span>01</span><p>What is Nadi Astrology?</p></div><div><h2>Not a horoscope. A search for the leaf written for you.</h2><p>Nadi Astrology is connected with palm-leaf manuscripts attributed to ancient sages. Each consultation follows a method of identification and confirmation, allowing the reader to establish whether a particular leaf belongs to the seeker.</p><p>The reading is approached as spiritual guidance, not as a promise of certainty. Its value lies in reflection, clarity, and the questions it helps you carry forward.</p></div></div></section>
+
+        <section class="nadi-principles"><div class="container-custom"><div class="nadi-heading-row"><div><p class="eyebrow">The foundation</p><h2>Three things the tradition asks of us.</h2></div><p>Every reading is held by discipline, patience, and respect for the person seeking guidance.</p></div><div class="nadi-principle-grid"><article><span>01</span><h3>Permission</h3><p>The process begins with the right intention and permission to seek the record connected with you.</p></article><article><span>02</span><h3>Confirmation</h3><p>Questions and details are carefully checked before a reader accepts that a leaf is yours.</p></article><article><span>03</span><h3>Guidance</h3><p>The final reading brings together the leaf's message, practical direction, and suggested remedies.</p></article></div></div></section>
+
+        <section id="journey" class="nadi-journey"><div class="container-custom"><div class="nadi-heading-row"><div><p class="eyebrow">Your journey</p><h2>From thumbprint to understanding.</h2></div><p>A consultation unfolds in stages. Knowing the path can make the experience calmer and more meaningful.</p></div><div class="journey-grid"><a href="{{ url('/nadi-astrology/how-leaf-searching-works') }}"><span>01</span><h3>Finding the leaf</h3><p>Learn how the search begins and how the reader narrows the collection.</p><strong>Learn the process →</strong></a><a href="{{ url('/nadi-astrology/the-kandams') }}"><span>02</span><h3>Understanding the Kandams</h3><p>Explore the chapters and areas of life traditionally covered in a reading.</p><strong>Explore the chapters →</strong></a><a href="{{ url('/nadi-astrology/online-prediction-process') }}"><span>03</span><h3>Receiving the reading</h3><p>Understand how an online consultation is arranged and what to expect.</p><strong>See the process →</strong></a></div></div></section>
+
+        <section class="nadi-cta"><div class="container-custom nadi-cta-inner"><div><p class="eyebrow">Begin thoughtfully</p><h2>Curious about the path your leaf may hold?</h2></div><a class="btn-primary" href="{{ url('/contact-us') }}">Speak with our team <span>→</span></a></div></section>
+    </main>
+    <footer><div class="container-custom"><div class="footer-bottom"><span>© {{ date('Y') }} Agasthiya Mahashiva Nadi Astrology. All rights reserved.</span><span>Made with <span style="color:#ef4444">♥</span> in India</span><a class="back-top" href="#top" aria-label="Back to top">↑</a></div></div></footer>
+</body>
+</html>
