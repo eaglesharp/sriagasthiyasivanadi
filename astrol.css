@@ -446,3 +446,5 @@ body > main { padding-top:98px; }
     .page-banner h1 { font-size:3.5rem; }
     .page-banner-subtitle { font-size:1rem; }
 }
+
+.brand-logo { height:56px; width:auto; max-width:260px; object-fit:contain; display:block; }.footer-logo { height:48px; }@media (max-width:768px) { .brand-logo { height:40px; max-width:200px; } }
