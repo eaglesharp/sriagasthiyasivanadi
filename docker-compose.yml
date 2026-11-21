@@ -36,7 +36,7 @@ services:
     environment:
       MYSQL_DATABASE: sivanadi
       MYSQL_USER: sivanadi
-      MYSQL_PASSWORD: "?sOLht;-B&~k]c%="
+      MYSQL_PASSWORD: "${MYSQL_PASSWORD}"
       MYSQL_ROOT_PASSWORD: rootpassword
     ports:
       - "3307:3306"
